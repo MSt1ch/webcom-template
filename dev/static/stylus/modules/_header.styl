@@ -1,0 +1,61 @@
+header
+	background: dark-blue
+	height 120px
+	text-align center
+	.container
+		height 100%
+	.wrap
+		display flex
+		height 100%	
+.logo
+	display flex
+	align-items center
+	width 230px	
+.main-nav__list
+	height 100%
+	display flex
+	justify-content space-between
+	max-width 940px
+	li
+		display inline-block
+		margin-right 20px
+		max-height 100%
+		width 140px
+		transition all .25s ease
+		&.last
+			margin-right 0	
+		&.active, &:hover
+			background #1e292f
+			border-bottom 4px solid accent
+			a
+				color: #6b848c
+	a
+		display flex
+		align-items center
+		justify-content: center
+		width 100%
+		height 100%	
+		text-transform uppercase
+		color #fff
+		transition color .25s ease
+
+.tel-number__list
+	display flex
+	flex-direction: column	
+	justify-content center
+	font-family: "MyriadProBold"
+	width 230px
+	li
+		margin-bottom 25px
+		
+		a
+			display flex
+			align-items center
+			color accent
+			font-size 24px
+			transition color .25s ease
+		&.last
+			margin-bottom 0	
+		&:hover
+			a
+				color #fff	

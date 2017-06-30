@@ -1,4 +1,4 @@
-@import 'D:\HTML\#11 - test\webcom - template\node_modules\stylus\lib\functions';
+@import 'D:\HTML\#11 - test\webcom-template\node_modules\stylus\lib\functions';
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /**
@@ -2881,7 +2881,7 @@ html {
   font-size: 14px;
 }
 body {
-  font-family: mainFont;
+  font-family: MyriadProRegular;
 }
 h1,
 h2,
@@ -2959,4 +2959,95 @@ button {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+}
+header {
+  background: #28363d;
+  height: 120px;
+  text-align: center;
+}
+header .container {
+  height: 100%;
+}
+header .wrap {
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+.logo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 230px;
+}
+.main-nav__list {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  max-width: 940px;
+}
+.main-nav__list li {
+  display: inline-block;
+  margin-right: 20px;
+  max-height: 100%;
+  width: 140px;
+  transition: all 0.25s ease;
+}
+.main-nav__list li.last {
+  margin-right: 0;
+}
+.main-nav__list li.active,
+.main-nav__list li:hover {
+  background: #1e292f;
+  border-bottom: 4px solid #ff8207;
+}
+.main-nav__list li.active a,
+.main-nav__list li:hover a {
+  color: #6b848c;
+}
+.main-nav__list a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  transition: color 0.25s ease;
+}
+.tel-number__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  font-family: "MyriadProBold";
+  width: 230px;
+}
+.tel-number__list li {
+  margin-bottom: 25px;
+}
+.tel-number__list li a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  color: #ff8207;
+  font-size: 24px;
+  transition: color 0.25s ease;
+}
+.tel-number__list li.last {
+  margin-bottom: 0;
+}
+.tel-number__list li:hover a {
+  color: #fff;
+}
+.top-slider {
+  display: block;
 }
