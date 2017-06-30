@@ -1,2 +1,61 @@
 .top-slider
 	display block
+	max-height 1000px
+	
+	.top-slider__item
+		background-size: cover
+		border-bottom 3px solid accent
+.top-slider_text
+	height 1000px
+	padding-top 135px
+	text-align center
+	h1
+		font-size 48px
+		font-family boldFont
+		letter-spacing 20px
+		text-transform uppercase
+		color: dark-blue
+		text-align center
+		margin-bottom 50px
+
+.line-decoraion
+	display inline-block
+	height 8px
+	width 8px
+	background-color dark-blue
+
+	
+.owl-theme 		
+	.owl-nav
+		display block
+		width 1400px
+		position absolute
+		top 50%
+		font-size 80px
+		color accent
+		.owl-prev
+			display inline-block
+			position absolute
+			left 90px
+		.owl-next
+			display inline-block
+			position absolute
+			right 90px
+	.owl-dots
+		position absolute
+		bottom: 205px
+		width 100%
+		margin-top 0
+		text-align center
+		
+		.owl-dot
+			width 20px
+			height 20px
+			background-color #28363d
+			display inline-block
+			margin-right 12px
+			border-radius: 50%
+			transition all .25s ease
+			&.active
+				background-color accent
+	
