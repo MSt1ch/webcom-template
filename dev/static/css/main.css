@@ -2970,6 +2970,30 @@ button {
   max-width: 1400px;
   margin: 0 auto;
 }
+.header__section h2 {
+  font-size: 48px;
+  font-family: MyriadProRegular;
+  color: #28363d;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  text-align: center;
+  font-size: 48px;
+}
+.header__section img {
+  margin: 25px auto 0;
+  display: block;
+}
+.header__section .header__description {
+  margin-top: 25px;
+}
+.header__section .header__description p {
+  font-size: 18px;
+  font-family: MyriadProRegular;
+  color: #91a5ac;
+  text-align: center;
+  line-height: 35px;
+  letter-spacing: normal;
+}
 header {
   background: #28363d;
   height: 120px;
@@ -3080,7 +3104,7 @@ header .wrap {
   text-align: center;
   margin-bottom: 50px;
 }
-.line-decoraion {
+.line-decoration {
   display: inline-block;
   height: 8px;
   width: 8px;
@@ -3124,31 +3148,14 @@ header .wrap {
   background-color: #ff8207;
 }
 .our-jobs {
-  height: 980px;
   background-size: cover;
   padding-top: 60px;
-}
-.our-jobs .our-jobs__h2 {
-  font-size: 48px;
-  font-family: MyriadProRegular;
-  color: #28363d;
-  text-transform: uppercase;
-  letter-spacing: 15px;
+  padding-bottom: 65px;
   text-align: center;
-}
-.our-jobs .our-jobs__desctiption {
-  margin-top: 50px;
-}
-.our-jobs .our-jobs__desctiption p {
-  font-size: 18px;
-  font-family: MyriadProRegular;
-  color: #91a5ac;
-  text-align: center;
-  line-height: 35px;
 }
 .container_wide {
   max-width: 1410px;
-  margin-top: 20px;
+  margin-top: 55px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -3191,6 +3198,7 @@ header .wrap {
   background-color: #d4d7d8;
   opacity: 0;
   transition: all 0.25s ease;
+  text-align: left;
 }
 .container_wide .our-jobs__item .item__description h3 {
   text-transform: uppercase;
@@ -3208,4 +3216,39 @@ header .wrap {
   text-transform: uppercase;
   font-size: 16px;
   margin-top: 10px;
+}
+.advantages {
+  padding-top: 55px;
+  padding-bottom: 65px;
+}
+.advantages__wrap {
+  margin-top: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.advantages__wrap .advantages__item {
+  display: inline-block;
+  width: 240px;
+  height: 190px;
+  text-align: center;
+}
+.advantages__wrap .advantages__item .icon-advantages {
+  display: inline-block;
+  width: auto;
+  height: 40px;
+}
+.advantages__wrap .advantages__item h3 {
+  margin-top: 25px;
+  text-transform: uppercase;
+  color: #28363d;
+  font-family: MyriadProBold;
+  font-size: 16px;
+}
+.advantages__wrap .advantages__item p {
+  margin-top: 20px;
+  color: #8198a0;
+  font-size: 16px;
+  line-height: 26px;
 }

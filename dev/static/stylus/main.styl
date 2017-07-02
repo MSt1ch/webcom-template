@@ -5,7 +5,7 @@
 @import '_vars.styl'
 
 // Подключаем спрайты (просто раскоментируем импорт при появлении PNG спрайтов)
-// @import '_sprite.styl'
+@import '_sprite.styl'
 
 // Подключаем миксины
 @import '_mixins.styl'
@@ -86,7 +86,27 @@ button
   max-width 1400px
   margin 0 auto
 
-
+.header__section  
+  h2
+    font-size 48px 
+    font-family mainFont
+    color: dark-blue
+    text-transform uppercase
+    letter-spacing 15px
+    text-align center 
+    font-size 48px 
+  img
+    margin: 25px auto 0
+    display block
+  .header__description
+    margin-top 25px
+    p
+      font-size 18px
+      font-family: mainFont
+      color: #91a5ac
+      text-align center 
+      line-height: 35px
+      letter-spacing normal
 
 // Общие стили
 @import '_common_styles.styl'
@@ -105,6 +125,9 @@ button
 
 // Стили секции наши работы
 @import 'sections/_our-jobs.styl'
+
+// Стили секции наши преимущества
+@import 'sections/_advantages.styl'
 
 // Стили футера
 @import 'modules/_footer.styl'
