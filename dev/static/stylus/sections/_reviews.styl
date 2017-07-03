@@ -1,0 +1,112 @@
+.reviews
+	padding-top 65px
+	padding-bottom 95px
+	.container-narrow
+		width 940px
+		margin: 0 auto
+		padding-top 55px
+		display flex
+		align-items flex-start
+		justify-content space-between
+		.contacts
+			width 320px
+			display inline-block
+			h3
+				color accent
+				font-family boldFont
+				text-transform uppercase
+				font-size 24px
+				margin-top 25px
+			.contacts-first__h3
+				margin-top 0	
+			p, span
+				display inline-block
+				margin-top 15px	
+				font-size 16px
+				color: #999
+			a
+				font-size 16px
+				color: #999
+			.span-comma
+				display inline
+			span:last-child
+				font-family: "OpenSansRegular"		
+.form-wrap
+	display inline-block
+	width 520px
+	height 650px
+	position relative
+	.form-group
+		display block
+		margin-bottom 30px
+		position relative
+		.color-element
+			display block
+			color: dark-blue
+			font-family: boldFont
+			font-size 24px
+			text-transform uppercase
+		input, textarea
+			display block
+			width 100%
+			border none
+			border-bottom: 1px solid #e5e5e5
+			margin-top 15px
+		.help-block.text-danger
+			position absolute
+			top 0
+			right 0	
+			color: accent
+		input.captcha
+			width 300px
+			margin-bottom 10px
+	.submit_b
+		text-transform uppercase
+		background-color: accent
+		font-size 18px
+		border-radius: 10px
+		padding 20px 60px
+		border: none
+		color: #fff
+		position absolute
+		bottom 0
+		right 0
+		cursor pointer
+		z-index: 2
+
+input::placeholder, textarea::placeholder
+	color: #c0c0c0
+	font-family: itFont
+	font-size 18px
+
+.file-upload
+	display inline-block
+	position relative
+	overflow hidden
+	background-color: accent
+	border-radius 10px
+	border none
+	font-size 40px
+	line-height 1
+	text-align center
+	padding 20px
+	width 80px
+	color: #fff
+	margin 0
+	cursor pointer
+	z-index: 3
+	.upload
+		position absolute
+		top 0
+		right 0
+		font-size 200px
+		opacity 0
+		cursor pointer
+		
+.form-group.form-group_upload
+	display flex
+	justify-content flex-start
+	align-items center
+	.color-element
+		display inline-block
+		margin-left 15px		

@@ -2975,7 +2975,7 @@ button {
   font-family: MyriadProRegular;
   color: #28363d;
   text-transform: uppercase;
-  letter-spacing: 15px;
+  letter-spacing: 0.2em;
   text-align: center;
   font-size: 48px;
 }
@@ -2984,7 +2984,8 @@ button {
   display: block;
 }
 .header__section .header__description {
-  margin-top: 25px;
+  margin: 25px auto 0;
+  max-width: 780px;
 }
 .header__section .header__description p {
   font-size: 18px;
@@ -3053,6 +3054,7 @@ header .wrap {
   text-transform: uppercase;
   color: #fff;
   transition: color 0.25s ease;
+  letter-spacing: 0.1em;
 }
 .tel-number__list {
   display: -ms-flexbox;
@@ -3147,6 +3149,9 @@ header .wrap {
 .owl-theme .owl-dots .owl-dot.active {
   background-color: #ff8207;
 }
+.owl-theme .owl-dots .owl-dot:last-child {
+  margin-right: 0;
+}
 .our-jobs {
   background-size: cover;
   padding-top: 60px;
@@ -3199,6 +3204,7 @@ header .wrap {
   opacity: 0;
   transition: all 0.25s ease;
   text-align: left;
+  letter-spacing: 0.06em;
 }
 .container_wide .our-jobs__item .item__description h3 {
   text-transform: uppercase;
@@ -3245,10 +3251,237 @@ header .wrap {
   color: #28363d;
   font-family: MyriadProBold;
   font-size: 16px;
+  letter-spacing: 0.1em;
 }
 .advantages__wrap .advantages__item p {
   margin-top: 20px;
   color: #8198a0;
   font-size: 16px;
   line-height: 26px;
+  letter-spacing: 0.01em;
+}
+.reviews {
+  padding-top: 65px;
+  padding-bottom: 95px;
+}
+.reviews .container-narrow {
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 55px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.reviews .container-narrow .contacts {
+  width: 320px;
+  display: inline-block;
+}
+.reviews .container-narrow .contacts h3 {
+  color: #ff8207;
+  font-family: MyriadProBold;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-top: 25px;
+}
+.reviews .container-narrow .contacts .contacts-first__h3 {
+  margin-top: 0;
+}
+.reviews .container-narrow .contacts p,
+.reviews .container-narrow .contacts span {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #999;
+}
+.reviews .container-narrow .contacts a {
+  font-size: 16px;
+  color: #999;
+}
+.reviews .container-narrow .contacts .span-comma {
+  display: inline;
+}
+.reviews .container-narrow .contacts span:last-child {
+  font-family: "OpenSansRegular";
+}
+.form-wrap {
+  display: inline-block;
+  width: 520px;
+  height: 650px;
+  position: relative;
+}
+.form-wrap .form-group {
+  display: block;
+  margin-bottom: 30px;
+  position: relative;
+}
+.form-wrap .form-group .color-element {
+  display: block;
+  color: #28363d;
+  font-family: MyriadProBold;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.form-wrap .form-group input,
+.form-wrap .form-group textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: 15px;
+}
+.form-wrap .form-group .help-block.text-danger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ff8207;
+}
+.form-wrap .form-group input.captcha {
+  width: 300px;
+  margin-bottom: 10px;
+}
+.form-wrap .submit_b {
+  text-transform: uppercase;
+  background-color: #ff8207;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 20px 60px;
+  border: none;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #c0c0c0;
+  font-family: MyriadProItalic;
+  font-size: 18px;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #c0c0c0;
+  font-family: MyriadProItalic;
+  font-size: 18px;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #c0c0c0;
+  font-family: MyriadProItalic;
+  font-size: 18px;
+}
+.file-upload {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  background-color: #ff8207;
+  border-radius: 10px;
+  border: none;
+  font-size: 40px;
+  line-height: 1;
+  text-align: center;
+  padding: 20px;
+  width: 80px;
+  color: #fff;
+  margin: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+.file-upload .upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 200px;
+  opacity: 0;
+  cursor: pointer;
+}
+.form-group.form-group_upload {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.form-group.form-group_upload .color-element {
+  display: inline-block;
+  margin-left: 15px;
+}
+.main-footer {
+  padding-top: 55px;
+  padding-bottom: 70px;
+  background-color: #28363d;
+  background-size: cover;
+}
+.main-footer .container__footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  letter-spacing: 0.06em;
+  color: #fff;
+}
+.main-footer .container__footer h3 {
+  font-size: 16px;
+  font-family: MyriadProBold;
+  color: #fff;
+  text-transform: uppercase;
+}
+.main-footer .container__footer .main-footer__social img,
+.main-footer .container__footer .main-footer__address img {
+  display: inline-block;
+  margin: 45px auto 20px;
+}
+.main-footer .container__footer .main-footer__logo {
+  text-align: left;
+}
+.main-footer .container__footer .main-footer__logo img {
+  display: inline-block;
+}
+.main-footer .container__footer .main-footer__logo img.separator {
+  display: block;
+  margin: 25px 0 20px;
+}
+.main-footer__social {
+  text-align: center;
+}
+.main-footer__social .social__buttons {
+  font-size: 26px;
+  text-align: center;
+}
+.main-footer__social .social__buttons a {
+  color: #fff;
+  margin-right: 25px;
+  transition: color 0.25s ease;
+}
+.main-footer__social .social__buttons a:last-child {
+  margin-right: 0;
+}
+.main-footer__social .social__buttons a:hover {
+  color: #ff8207;
+}
+.main-footer__address {
+  text-align: right;
+}
+.copyright {
+  text-transform: uppercase;
+  font-size: 14px;
+  background-color: #1e292f;
+  border-bottom: 2px #ff8207 solid;
+  height: 62px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.copyright p {
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0.2em;
 }

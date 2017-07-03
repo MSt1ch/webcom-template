@@ -21,5 +21,28 @@ $(function() {
 		
 	});
 
+	$("input, select, textarea").jqBootstrapValidation(
+	{
+		submitSuccess: function ($form, event) {
+
+				event.preventDefault();
+        //$(".main_form").submit(function() {
+        	var str = $(".main_form").serialize();
+        //E-mail Ajax Send
+        $.ajax({
+        	type: "POST",
+        	url: "mail.php",
+        	data: str
+        }).done(function() {
+        	$(this).find("input").val("");
+        	alert("Спасибо, мы обязательно свяжемся с Вами в ближайшее время!");
+        	$(".main_form").trigger("reset");
+        });
+        return false;
+        //});
+    }
+
+  });
+
 
 });

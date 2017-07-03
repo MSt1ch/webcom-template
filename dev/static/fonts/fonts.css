@@ -16,3 +16,22 @@
 			font-style: normal;
 			font-weight: normal;
 	}
+
+	@font-face {
+			font-family: "MyriadProItalic";
+			src: url("MyriadProItalic/MyriadProItalic.eot");
+			src: url("MyriadProItalic/MyriadProItalic.eot?#iefix")format("embedded-opentype"),
+			url("MyriadProItalic/MyriadProItalic.woff") format("woff"),
+			url("MyriadProItalic/MyriadProItalic.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+	@font-face {
+			font-family: "OpenSansRegular";
+			src: url("OpenSansRegular/OpenSansRegular.eot");
+			src: url("OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+			url("OpenSansRegular/OpenSansRegular.woff") format("woff"),
+			url("OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}

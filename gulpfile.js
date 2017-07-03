@@ -65,7 +65,7 @@ gulp.task('scripts', function() {
             // Библиотеки
             'dev/static/libs/magnific/jquery.magnific-popup.min.js',
             'dev/static/libs/maskedinput/maskedinput.js',
-            'dev/static/libs/validate/jquery.validate.min.js',
+            'dev/static/libs/jqBootstrapValidation/jqBootstrapValidation.js',
             'dev/static/libs/OwlCarousel/owl.carousel.min.js'
         ])
         .pipe(concat('libs.min.js'))

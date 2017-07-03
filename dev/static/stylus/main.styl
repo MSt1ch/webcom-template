@@ -5,7 +5,7 @@
 @import '_vars.styl'
 
 // Подключаем спрайты (просто раскоментируем импорт при появлении PNG спрайтов)
-@import '_sprite.styl'
+// @import '_sprite.styl'
 
 // Подключаем миксины
 @import '_mixins.styl'
@@ -92,14 +92,15 @@ button
     font-family mainFont
     color: dark-blue
     text-transform uppercase
-    letter-spacing 15px
+    letter-spacing: .2em
     text-align center 
     font-size 48px 
   img
     margin: 25px auto 0
     display block
   .header__description
-    margin-top 25px
+    margin: 25px auto 0
+    max-width 780px
     p
       font-size 18px
       font-family: mainFont
@@ -128,6 +129,9 @@ button
 
 // Стили секции наши преимущества
 @import 'sections/_advantages.styl'
+
+// Стили секции добавить отзыв
+@import 'sections/_reviews.styl'
 
 // Стили футера
 @import 'modules/_footer.styl'
