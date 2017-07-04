@@ -1,0 +1,19 @@
+.popup
+	.popup__form-wrap
+		.button-cancel
+			i.fa.fa-times
+		h2 Оформите заявку
+		form.popup__form(novalidate)
+			label.form-group
+				span.color-element Ваше имя
+				input(type="text" name="name" placeholder="Иванов Иван" data-validation-required-message="Пожалуйста, введите ваше имя" required)
+				span.help-block.text-danger
+			label.form-group
+				span.color-element E-mail
+				input(type="email" name="email" placeholder="Example@mysite.com" data-validation-required-message="Email не введен" data-validation-email-message="Адресс почты указан некорректно" required)
+				span.help-block.text-danger
+			label.form-group
+				span.color-element Отзыв
+				textarea(rows="5" name="text" placeholder="Ваше сообщение" data-validation-required-message="Вы не ввели сообщение" required)
+				span.help-block.text-danger
+			button.submit_b Отправить

@@ -4,6 +4,23 @@
 
 	$(function() {
 		
+		$('.mobile-buttton').click(function(){
+			$(this).toggleClass('open');
+			$('.mobile-menu').toggleClass('show');
+		});
+
+		$('.mobile-menu a').click(function(){
+			$('.mobile-menu').toggleClass('show');
+			$('.mobile-buttton').toggleClass('open');
+		});
+
+		$('.top-slider__').on("click", function(){
+			$('.popup').toggleClass('show').fadeIn('fast')
+		})
+		$('.button-cancel').on("click", function(){
+			$('.popup').fadeOut('fast')
+		})
+
 		
 		$(".owl-carousel").owlCarousel({
 			Default: 1,
@@ -37,7 +54,7 @@
 	}
 	load();
 	
-
+	
 	$(document).on("scroll", onScroll,);	
 
 	
@@ -53,6 +70,8 @@
 	  changeLink(navbar, scrollPos)
 
 	}
+
+
 
 	function changeLink(event, scrollPos){
 		event.each(function () {
@@ -94,36 +113,28 @@
 	  });
 	});
 
-	$('.mobile-buttton').click(function(){
-		$(this).toggleClass('open');
-		$('.mobile-menu').toggleClass('show');
-	});
-		$('.mobile-menu a').click(function(){
-		$('.mobile-menu').toggleClass('show');
-		$('.mobile-buttton').toggleClass('open');
-		
-	});
+	
 
 
 	$("input, select, textarea").jqBootstrapValidation(
 	{
 		submitSuccess: function ($form, event) {
-
-				event.preventDefault();
-        //$(".main_form").submit(function() {
-        	var str = $(".main_form").serialize();
-        //E-mail Ajax Send
-        $.ajax({
-        	type: "POST",
-        	url: "mail.php",
-        	data: str
-        }).done(function() {
-        	$(this).find("input").val("");
-        	alert("Спасибо, мы обязательно свяжемся с Вами в ближайшее время!");
-        	$(".main_form").trigger("reset");
-        });
-        return false;
-        //});
+			alert("Спасибо, мы обязательно свяжемся с Вами в ближайшее время!");
+				// event.preventDefault();
+        
+    //     	var str = $(".main_form").serialize();
+    //     //E-mail Ajax Send
+    //     $.ajax({
+    //     	type: "POST",
+    //     	url: "mail.php",
+    //     	data: str
+    //     }).done(function() {
+    //     	$(this).find("input").val("");
+    //     	alert("Спасибо, мы обязательно свяжемся с Вами в ближайшее время!");
+    //     	$(".main_form").trigger("reset");
+    //     });
+    //     return false;
+        
     }
 
   });

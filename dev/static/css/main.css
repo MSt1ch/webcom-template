@@ -362,6 +362,7 @@ html {
 }
 body {
   font-family: MyriadProRegular;
+  margin: 0;
 }
 h1,
 h2,
@@ -562,7 +563,7 @@ header .wrap {
 .navbar {
   position: fixed;
   right: 20px;
-  top: 50%;
+  top: calc(50% - 60px);
   z-index: 1000;
 }
 .navbar .navbar__list {
@@ -693,6 +694,121 @@ header .wrap {
   transform: rotate(-45deg);
   top: 39px;
   left: 8px;
+}
+.popup {
+  display: none;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.75);
+  z-index: 4000;
+}
+.popup.show {
+  display: -ms-flexbox;
+  display: flex;
+}
+.popup .popup__form-wrap {
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.popup .popup__form-wrap .button-cancel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  border-bottom-left-radius: 5px;
+  color: #000;
+  font-size: 26px;
+  text-align: center;
+  padding-top: 5px;
+}
+.popup .popup__form-wrap .button-cancel:hover {
+  color: #ff8207;
+  cursor: pointer;
+}
+.popup .popup__form-wrap h2 {
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #28363d;
+  font-size: 26px;
+  font-family: MyriadProBold;
+  margin-bottom: 20px;
+}
+.popup .popup__form-wrap .form-group {
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+}
+.popup .popup__form-wrap .form-group .color-element {
+  display: block;
+  color: #28363d;
+  font-family: MyriadProBold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.popup .popup__form-wrap .form-group input,
+.popup .popup__form-wrap .form-group textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: 15px;
+}
+.popup .popup__form-wrap .form-group .help-block.text-danger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ff8207;
+}
+.popup .submit_b {
+  display: block;
+  margin: 10px auto 20px;
+  text-transform: uppercase;
+  background-color: #ff8207;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 15px 40px;
+  border: none;
+  color: #fff;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #c0c0c0;
+  font-family: MyriadProItalic;
+  font-size: 18px;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #c0c0c0;
+  font-family: MyriadProItalic;
+  font-size: 18px;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #c0c0c0;
+  font-family: MyriadProItalic;
+  font-size: 18px;
 }
 .top-slider {
   display: block;

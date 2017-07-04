@@ -1,0 +1,90 @@
+.popup
+	
+	display none
+	justify-content center
+	align-items center
+	position fixed
+	top 0
+	bottom 0
+	left 0
+	right 0
+	background-color: rgba(0, 0, 0, .75)
+	z-index: 4000
+	&.show
+		display flex
+	.popup__form-wrap
+		display inline-block
+		width 100%
+		max-width 500px
+		background-color: #fff
+		border-radius: 5px
+		padding-right 20px
+		padding-left 20px
+		position: relative
+		overflow hidden
+		.button-cancel
+			position absolute
+			top 0
+			right 0
+			width 40px
+			height 40px
+			border-bottom 1px solid black
+			border-left 1px solid black
+			border-bottom-left-radius: 5px
+			color: #000
+			font-size 26px
+			text-align center
+			padding-top 5px
+			&:hover
+				color: accent
+				cursor pointer
+			
+		h2
+			margin-top 20px
+			text-align center
+			text-transform uppercase
+			color: dark-blue
+			font-size 26px
+			font-family: boldFont
+			margin-bottom 20px
+		.form-group
+			display block
+			margin-bottom 20px
+			position relative
+			.color-element
+				display block
+				color: dark-blue
+				font-family: boldFont
+				font-size 16px
+				text-transform uppercase
+			input, textarea
+				display block
+				width 100%
+				border none
+				border-bottom: 1px solid #e5e5e5
+				margin-top 15px
+			.help-block.text-danger
+				position absolute
+				top 0
+				right 0	
+				color: accent
+	.submit_b
+		display block
+		margin: 10px auto 20px
+		text-transform uppercase
+		background-color: accent
+		font-size 18px
+		border-radius: 10px
+		padding 15px 40px
+		border: none
+		color: #fff
+		// position absolute
+		bottom 0
+		right 0
+		cursor pointer
+		z-index: 2
+
+input::placeholder, textarea::placeholder
+	color: #c0c0c0
+	font-family: itFont
+	font-size 18px
