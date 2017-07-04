@@ -1,11 +1,15 @@
 header
 	background: dark-blue
 	height: 120px
+	width 100%
 	text-align center
+	position: fixed
+	z-index: 3000
 	.container
 		height 100%
 	.wrap
 		display flex
+		justify-content space-between
 		height 100%	
 .logo
 	display flex
@@ -16,7 +20,7 @@ header
 	display flex
 	justify-content space-between
 	max-width 940px
-	display none
+	//display none
 	li
 		display inline-block
 		margin-right 20px
@@ -25,11 +29,7 @@ header
 		transition all .25s ease
 		&.last
 			margin-right 0	
-		&.active, &:hover
-			background #1e292f
-			border-bottom 4px solid accent
-			a
-				color: #6b848c
+		
 	a
 		display flex
 		align-items center
@@ -40,19 +40,27 @@ header
 		color #fff
 		transition color .25s ease
 		letter-spacing: .1em
+		&.active, &:hover
+			
+			background #1e292f
+			border-bottom 4px solid accent
+			color: #6b848c
+		&.active	
+			cursor default
 
 .tel-number__list
 	display flex
 	flex-direction: column	
 	justify-content center
+	align-items flex-end
 	font-family: boldFont
 	width 230px
+	width 100%
 	li
 		margin-bottom 25px
+		display inline-block
 		
 		a
-			display flex
-			align-items center
 			color accent
 			font-size 24px
 			transition color .25s ease
@@ -62,3 +70,5 @@ header
 		&:hover
 			a
 				color #fff	
+				
+

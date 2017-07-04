@@ -8,7 +8,11 @@
 	.main-footer
 		padding-left 10px		
 		padding-right 10px		
-
+	header
+		.tel-number__list
+			margin-right 10px
+		.main-nav__list
+			margin-left 10px
 // Tablet - Mobile
 @media (max-width: 1024px)
 	@media (min-width: 320px)
@@ -18,6 +22,14 @@
 
 // Tablet
 @media (max-width : 1024px)
+	.navbar
+		right 5px
+	.logo
+		margin-left 20px
+	.mobile-buttton
+		display block
+	.main-nav__list, .tel-number__list
+		display none
 	.owl-theme
 		.owl-nav
 			.owl-prev
@@ -51,20 +63,20 @@
 
 // Mobile iPhone 6 and 6 plus
 @media (max-width : 736px)
-		.top-slider__text
-			
-			h1
-				font-size 30px
-				margin-bottom 35px
-		.owl-carousel
-			.owl-item
-				img
-					margin: 0 auto
-					width 80%
-		.top-slider__description
-			p
-				font-size 16px
-				line-height 1.3				
+	.top-slider__text
+		
+		h1
+			font-size 30px
+			margin-bottom 35px
+	.owl-carousel
+		.owl-item
+			img
+				margin: 0 auto
+				width 80%
+	.top-slider__description
+		p
+			font-size 16px
+			line-height 1.3				
 	@media (min-width :  375px) 
 		// .row
 
@@ -87,11 +99,11 @@
 	.owl-theme
 		.owl-nav
 			.owl-prev
-				left 10px
+				left 30px
 	.owl-theme
 		.owl-nav
 			.owl-next
-				right 10px			
+				right 30px			
 	.top-slider__.button
 		font-size: 16px
 		padding: 15px 25px
@@ -103,4 +115,4 @@
 			.container__footer
 				.main-footer__social, .main-footer__address
 					img
-						margin: 15px auto			
+						margin: 15px auto

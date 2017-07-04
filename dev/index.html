@@ -15,23 +15,38 @@
       <header>
         <div class="container">
           <div class="wrap">
-            <div class="logo"><a href="#"><img src="static/img/content/logo.png" alt=""></a></div>
+            <div class="logo"><a href="#top-slider"><img src="static/img/content/logo.png" alt=""></a></div>
             <ul class="main-nav__list">
-              <li class="active"><a class="main-nav__link" href="#">Главная</a></li>
-              <li><a class="main-nav__link" href="#">Портфолио</a></li>
-              <li><a class="main-nav__link" href="#">Преимущества</a></li>
-              <li><a class="main-nav__link" href="#">Схема работы</a></li>
-              <li><a class="main-nav__link" href="#">Отзывы</a></li>
-              <li class="last"><a class="main-nav__link" href="#">Контакты	</a></li>
+              <li><a class="main-nav__link" href="#top-slider">Главная</a></li>
+              <li><a class="main-nav__link" href="#our-jobs">Портфолио</a></li>
+              <li><a class="main-nav__link" href="#advantages">Преимущества</a></li>
+              <li class="last"><a class="main-nav__link" href="#reviews">Контакты	</a></li>
             </ul>
             <ul class="tel-number__list">
               <li><a class="tel-number__link" href="tel:+375 (29) 123-45-67">+375 (29) 123-45-67	</a></li>
-              <li class="last"><a class="tel-number__link" href="tel:+375 (33) 123-45-67">+375 (33) 123-45-67			</a></li>
+              <li class="last"><a class="tel-number__link" href="tel:+375 (33) 123-45-67">+375 (33) 123-45-67	</a></li>
             </ul>
           </div>
         </div>
       </header>
-      <section class="top-slider">
+      <div class="navbar">
+        <ul class="navbar__list">
+          <li><a class="active" href="#top-slider"></a></li>
+          <li><a href="#our-jobs"></a></li>
+          <li><a href="#advantages"></a></li>
+          <li class="last"><a href="#reviews"></a></li>
+        </ul>
+      </div><a class="button_up" href="#top-slider"><i class="fa fa-angle-up"></i></a>
+      <div class="mobile-buttton"><span></span><span></span><span></span></div>
+      <div class="mobile-menu">
+        <ul class="mobile-menu__list">
+          <li><a class="main-nav__link" href="#top-slider">Главная</a></li>
+          <li><a class="main-nav__link" href="#our-jobs">Портфолио</a></li>
+          <li><a class="main-nav__link" href="#advantages">Преимущества</a></li>
+          <li><a class="main-nav__link" href="#reviews">Контакты	</a></li>
+        </ul>
+      </div>
+      <section class="top-slider" id="top-slider">
         <div class="button-wrap"><a class="button-down" href="#our-jobs"> <i class="fa fa-angle-down"></i></a></div>
         <div class="owl-carousel owl-theme">
           <div class="top-slider__item" style="background-image: url('static/img/general/slider.jpg');">
@@ -144,7 +159,7 @@
           </div>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <div class="container">
           <div class="header__section">
             <h2>почему мы</h2><img src="static/img/sprite/separator.png" alt="">
@@ -190,7 +205,7 @@
           </div>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="container">
           <div class="header__section">
             <h2>добавьте отзыв</h2><img src="static/img/sprite/separator.png" alt="">
@@ -234,7 +249,7 @@
         </div>
       </section>
     </div>
-    <footer class="main-footer" style="background-image: url('static/img/general/map-footer.png');">
+    <footer class="section fp-auto-height main-footer" style="background-image: url('static/img/general/map-footer.png');">
       <div class="container container__footer">
         <div class="main-footer__logo"><a href="#"><img src="static/img/content/logo.png" alt=""></a><img class="separator" src="static/img/sprite/separator.png" alt="">
           <p>Дисклеймер компании</p>
