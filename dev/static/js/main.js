@@ -11,6 +11,8 @@ $(function() {
 		resposiveClass: true,
     nav: true,
     dots: true,
+    mouseDrag: false,
+    touchDrag: false,
     autoHeight:true,
 		responsive : {
 			0 : {

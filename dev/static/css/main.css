@@ -3022,6 +3022,7 @@ header .wrap {
   -ms-flex-pack: justify;
       justify-content: space-between;
   max-width: 940px;
+  display: none;
 }
 .main-nav__list li {
   display: inline-block;
@@ -3087,34 +3088,94 @@ header .wrap {
 .top-slider {
   display: block;
   max-height: 1000px;
+  position: relative;
 }
 .top-slider .top-slider__item {
   background-size: cover;
   border-bottom: 3px solid #ff8207;
 }
-.top-slider_text {
-  height: 1000px;
-  padding-top: 135px;
+.button-wrap {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  z-index: 2000;
   text-align: center;
 }
-.top-slider_text h1 {
+.button-wrap .button-down {
+  display: inline-block;
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  background-color: #28363d;
+  opacity: 0.6;
+  margin: auto;
+  text-align: center;
+}
+.button-wrap .button-down i {
+  color: #fff;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 26px;
+  transition: color 0.25s ease;
+}
+.button-wrap .button-down:hover i {
+  color: #ff8207;
+}
+.top-slider__text {
+  height: 100vh;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.top-slider__text h1 {
   font-size: 48px;
   font-family: MyriadProBold;
-  letter-spacing: 20px;
+  letter-spacing: 0.4em;
   text-transform: uppercase;
   color: #28363d;
   text-align: center;
   margin-bottom: 50px;
 }
+.top-slider__description {
+  text-align: center;
+}
+.top-slider__description p {
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: 24px;
+  color: #28363d;
+  display: inline-block;
+  width: 100%;
+  max-width: 780px;
+}
 .line-decoration {
   display: inline-block;
-  height: 8px;
-  width: 8px;
-  background-color: #28363d;
+  margin-bottom: 45px;
+}
+.top-slider__.button {
+  font-size: 32px;
+  letter-spacing: 0.06em;
+  color: #fff;
+  font-family: MyriadProBold;
+  text-transform: uppercase;
+  padding: 25px 35px;
+  background-color: #ff8207;
+  border-radius: 10px;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
 }
 .owl-theme .owl-nav {
   display: block;
-  width: 1400px;
+  width: 100%;
+  max-width: 1400px;
   position: absolute;
   top: 50%;
   font-size: 80px;
@@ -3132,7 +3193,7 @@ header .wrap {
 }
 .owl-theme .owl-dots {
   position: absolute;
-  bottom: 205px;
+  bottom: 12%;
   width: 100%;
   margin-top: 0;
   text-align: center;
@@ -3180,9 +3241,13 @@ header .wrap {
   height: 320px;
   background-color: #28363d;
   margin-bottom: 15px;
+  margin-right: 5px;
 }
-.container_wide .our-jobs__item.our-jobs__item_second {
+.container_wide .our-jobs__item_second {
   width: 450px;
+}
+.container_wide .our-jobs__item_third {
+  margin-right: 0;
 }
 .container_wide .our-jobs__item:hover {
   cursor: default;
@@ -3198,6 +3263,7 @@ header .wrap {
   padding: 18px 0 0 60px;
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
   height: 100px;
   background-color: #d4d7d8;
@@ -3233,6 +3299,8 @@ header .wrap {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .advantages__wrap .advantages__item {
   display: inline-block;
@@ -3265,7 +3333,7 @@ header .wrap {
   padding-bottom: 95px;
 }
 .reviews .container-narrow {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
   padding-top: 55px;
   display: -ms-flexbox;
@@ -3274,10 +3342,15 @@ header .wrap {
       align-items: flex-start;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse;
 }
 .reviews .container-narrow .contacts {
   width: 320px;
   display: inline-block;
+  margin-top: 70px;
 }
 .reviews .container-narrow .contacts h3 {
   color: #ff8207;
@@ -3422,6 +3495,8 @@ textarea::placeholder {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   letter-spacing: 0.06em;
   color: #fff;
 }
@@ -3484,4 +3559,102 @@ textarea::placeholder {
   text-align: center;
   color: #fff;
   letter-spacing: 0.2em;
+}
+@media (max-width: 1400px) {
+  .container_wide {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .container_wide .our-jobs__item {
+    margin: 10px;
+  }
+  .container_wide .our-jobs__item_second {
+    width: 460px;
+  }
+  .main-footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .owl-theme .owl-nav .owl-prev {
+    left: 30px;
+  }
+  .owl-theme .owl-nav .owl-next {
+    right: 30px;
+  }
+  .top-slider__description p {
+    font-size: 20px;
+  }
+  .top-slider__text h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .top-slider__.button {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .container_wide .our-jobs__item {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media (max-width: 736px) {
+  .top-slider__text h1 {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+  .owl-carousel .owl-item img {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .top-slider__description p {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+}
+@media (max-width: 568px) {
+  .main-footer .container__footer {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .main-footer .container__footer .main-footer__logo,
+  .main-footer .container__footer .main-footer__social {
+    margin-bottom: 30px;
+  }
+  .main-footer .container__footer .main-footer__address {
+    text-align: center;
+  }
+  .main-footer .container__footer .main-footer__logo img.separator {
+    margin: 25px auto 20px;
+  }
+  .owl-theme .owl-nav .owl-prev {
+    left: 10px;
+  }
+  .owl-theme .owl-nav .owl-next {
+    right: 10px;
+  }
+  .top-slider__.button {
+    font-size: 16px;
+    padding: 15px 25px;
+    margin-top: 15px;
+  }
+  .line-decoration {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 320px) {
+  .reviews .container-narrow {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+@media (max-width: 568px) and (min-width: 320px) {
+  .main-footer .container__footer .main-footer__social img,
+  .main-footer .container__footer .main-footer__address img {
+    margin: 15px auto;
+  }
 }
